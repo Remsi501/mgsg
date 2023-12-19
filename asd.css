@@ -1,0 +1,112 @@
+	#navbar ul {
+  display: none;
+  background-color: #f90;
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 60px;
+  background-color: #666;
+  padding-left: 25px;
+  min-width: 470px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(image/RBb17igui0Y.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+       
+}
+
+card {
+	width: 30%;	
+        max-width: 350px;
+	border: 1px 
+        solid black;
+        padding: 20px;
+}
+
+.card__description {
+	margin-top: 65px;
+	/* внешний отступ в 65px */
+	text-align: center;
+	/* выравниваем текст по центру */
+}
+
+.card__image {
+	height: 100px;
+	/* ширина 100px */
+	width: 100%;
+	/* ширина блока под изображение 100% */
+	max-width: 180px;
+	/* максимальная ширина блока под изображение 180px */
+	margin: auto;
+	/* автоматические отступы, центрируем блок под изображение */
+}
+@media screen and (max-width: 768px) {
+	.card {
+		width: 50%;
+		/* ширина карточки 50% от ширины контейнера */
+		max-width: 100%;
+		/* максимальная ширина карточки 100% от ширины контейнера */
+		margin: auto auto 10px;
+		/* автоматический внешний отступ со всех сторон, но снизу 10px */
+	}
+}
+
+/* При ширине браузера 480px и меньше
+*/
+@media screen and (max-width: 480px) {
+	.card {
+		width: 95%;
+	}
+}
+
+.Gay {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 20px auto;
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	/* определяем контейнер как flex-контейнер */
+	justify-content: space-between;
+	/* распределяем элементы по горизонтали */
+	flex-wrap: wrap;
+	/* разрешаем перенос элементов, если они не помещаются в одну строку */
+}
+
+<style>
+  .logo {
+    transform: translateX(100px);
+  }
+</style>
